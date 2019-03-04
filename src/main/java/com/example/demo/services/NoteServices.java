@@ -12,4 +12,7 @@ public interface NoteServices {
 
     Note saveNote(Note note);
 
+//    Note findbyQuery(String query);
+//    List<Note> findbyQuery(String query);
+
 }

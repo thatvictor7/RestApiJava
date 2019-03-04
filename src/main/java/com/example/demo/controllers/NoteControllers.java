@@ -22,11 +22,18 @@ public class NoteControllers {
     @GetMapping
     List<Note> getAllNotes() {
         return noteServices.findAllNotes();
+    }
 
-    }@GetMapping("/{id}")
+    @GetMapping("/{id}")
     public Note getNotesById(@PathVariable Long id) {
         return noteServices.findNoteById(id);
     }
+
+//    @GetMapping("/test")
+//    List<Note> getByQuery(@RequestParam(name="query") String query){
+//
+//        return noteServices.findbyQuery(query);
+//    }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)

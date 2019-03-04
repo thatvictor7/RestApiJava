@@ -29,4 +29,15 @@ public class NoteServicesImpl implements NoteServices {
     public Note saveNote(Note note) {
         return noteRepository.save(note);
     }
+
+//    @Override
+//    public List<Note> findbyQuery(String query) {
+//        System.out.println(noteRepository);
+//        return noteRepository.findAll();
+//    }
+//    @Override
+//    public Note findbyQuery(String string) {
+//        return noteRepository.findOne(string).get();
+
+//    }
 }
